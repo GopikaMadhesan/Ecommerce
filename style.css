@@ -1,0 +1,346 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4A4E69; /* Darker header color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9dc0e6; /* Accent color on hover */
+}
+
+/* Hero Section */
+#hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Accent color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF4F3D; /* Darker shade on hover */
+}
+
+/* Features Section */
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.feature-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Product List Styles */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for products */
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for images */
+    height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+}
+
+.product p {
+    font-size: 1.2em;
+}
+
+/* Cart Page Styles */
+#cart {
+    padding: 20px;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#cart-table th {
+    background-color: #4A4E69; /* Header background */
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A4E69;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Full width for mobile */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+}
+/* Add to Cart Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background-color: #FF4F3D; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+button:active {
+    background-color: #E64B38; /* Even darker shade on click */
+    transform: translateY(0); /* Reset lift effect */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contact Section Styling */
+#contact {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #FF6F61;
+    outline: none;
+    background-color: #fff;
+}
+
+#contact form button {
+    padding: 12px;
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact form button:hover {
+    background-color: #FF4F3D;
+    transform: translateY(-3px);
+}
+
+#contact form button:active {
+    background-color: #E64B38;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        width: 90%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni Shop - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpeg" type="image/png">
+
+</head>
+<body>
+    <header>
+        <h1>Furni Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-list">
+        <h2>Our Products</h2>
+        <div class="product" id="product1">
+            <img src="chair.jpeg" alt="Modern Chair">
+            <h3>Modern Chair</h3>
+            <p>Price: $150</p>
+            <button onclick="addToCart('Modern Chair', 150)">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="hero.jpeg" alt="Wooden Table">
+            <h3>Wooden Table</h3>
+            <p>Price: $250</p>
+            <button onclick="addToCart('Wooden Table', 250)">Add to Cart</button>
+        </div>
+        <div class="product" id="product3">
+            <img src="Sofa.jpeg" alt="Comfort Sofa">
+            <h3>Comfort Sofa</h3>
+            <p>Price: $450</p>
+            <button onclick="addToCart('Comfort Sofa', 450)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Furni Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
